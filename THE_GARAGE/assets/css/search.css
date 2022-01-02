@@ -1,0 +1,599 @@
+.full-container {
+    position: relative;
+    top: 130px;
+    display: flex;
+    width: 99%;
+}
+
+.middle-part
+{
+    height: auto;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: -20px;
+    margin-right: 10px;
+    width:60%;
+}
+.search-results {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    grid-gap: 10px;
+    
+
+   
+}
+
+.car-name {
+    margin-left: 20px;
+    color: darkblue;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.search-item {
+    width: auto;
+    height: 460px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(59, 43, 91, 0.7);
+}
+
+.search-item:hover {
+    transform: scale(1.02);
+}
+
+.first-row {
+    display: block;
+    position: relative;
+}
+
+.search-filter {
+    margin-top: -40px;
+}
+
+.first-row .car-price {
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: #00b7eb;
+    position: absolute;
+    left: 10px;
+}
+
+.car-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.first-row {
+    margin-top: 20px;
+}
+
+.car-description {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.view-details {
+    width: 90%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    outline: 0;
+    margin: 10px;
+    color: white;
+    background-color: rebeccapurple;
+    height: 60px;
+}
+
+.search-box {
+    border-radius: 5px;
+    background-color: #fff;
+    height: auto;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.car-type input {
+    display: block;
+}
+
+.car-type label,
+.pickup-date label {
+    display: block;
+    margin-left: 30px;
+    font-weight: bolder;
+}
+
+input,
+label {
+    margin-left: 10px;
+    margin-top: 10px;
+    display: block;
+}
+
+label {
+    font-size: 1.2rem;
+    color: darkblue;
+    font-weight: bolder;
+}
+
+input {
+    width: 90%;
+}
+
+select {
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+[type="date"] {
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 100% 50% no-repeat;
+    width: 80%;
+    font-size: 1.3rem;
+    margin-left: 30px;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.no-results {
+    text-align: center;
+    margin: 0 auto;
+    color: darkblue;
+}
+
+.result {
+    color: red;
+}
+
+.slidecontainer {
+    display: flex;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: blue;
+    font-size: 20px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.price-value {
+    margin: 0 auto;
+    color: darkblue;
+    font-size: 1.4rem;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.price-range {
+    margin-top: 10px;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.search {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    height: 50px;
+    background-color: #ff4500;
+    color: #fff;
+}
+
+.slider {
+    margin-top: 170px;
+}
+
+.hot-deals {
+    width: 400px;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    height: 80%;
+    margin-top: -20px;
+}
+
+.first-row-filter {
+    margin-left: 20px;
+}
+
+.form-check-label {
+    margin-top: -20px;
+    color: #2e2e2e;
+}
+
+.gallery {
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 50%;
+}
+
+.gallery img {
+    position: absolute;
+    margin-left: 60px;
+    height: 200px;
+    width: 250px;
+}
+
+.gallery img:nth-child(1) {
+    left: 0;
+}
+
+.images-and-fautures {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: -70px;
+}
+
+.car-info {
+    position: fixed;
+    top: 130px;
+    left: 20%;
+    padding: 20px;
+    background: #fff;
+    color: darkblue;
+    border-radius: 20px;
+    border: 3px solid lightskyblue;
+    width: 56%;
+}
+
+.first-row-car {
+    border-bottom: 2px solid black;
+}
+
+.car-price-info {
+    color: #9932cc;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.description-and-features {
+    display: block;
+}
+
+.feautures-info {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.feature-div {
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 100%;
+    height: 60px;
+    background-color: lightgray;
+    display: flex;
+    padding: 4px;
+}
+
+.description-info {
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-top:-30px;
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    outline: 0;
+    border: 0;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: #00A0C6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#deal-name {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#deal {
+    border-bottom: 1px solid black;
+}
+
+#deal-price {
+    font-weight: bolder;
+    color: #ff4500;
+}
+#pricey
+{
+    display:flex-end;
+    position:absolute;
+    right:0;
+    color:#ff4500;
+    font-size:30px;
+    bottom:2px;
+}
+
+.view-deal-details {
+    outline: 0;
+    border: 0;
+    background-color: #00A0C6;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 7px;
+}
+
+#footer {
+    background-color: #4b0082;
+    color: white;
+}
+
+text-white i {
+    margin-right: 40px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .full-container {
+      display: block;
+      width:100%;
+      margin:0 auto;
+      position: relative;
+      top:100px;
+    }
+    .search-box{
+        width:80%;
+        margin: 0 auto;
+    }
+    .middle-part
+    {
+        width:80%;
+        margin: 0 auto;
+        margin-top:20px;
+        background-color: #fff;
+    }
+    .hot-deals
+    {
+        width:80%;
+        margin: 0 auto;
+        margin-top:20px;
+        height: auto;
+        background-color: #fff;
+    }
+    .navbar
+    {
+        margin-top:-20px;
+    }
+   
+   .car-info{
+     display: block;
+     margin: 0 auto;
+     width:auto;
+     height:auto;
+     position:absolute;
+    right:10%;
+     overflow: hidden;
+
+   }
+   .images-and-fautures
+   {
+       display: block;
+       margin-bottom: -10px;
+   }
+ 
+   .prev
+   {
+       position: absolute;
+       top:30%;
+       
+       margin-left: 20px;
+       margin-top:20px;
+      
+   }
+   
+   #we
+   {
+       position: absolute;
+       left:80%;
+   }
+   .just
+   {
+       margin-top:120px;
+   }
+   #pricey
+   {
+       color:red;
+       font-size:2rem;
+       font-weight: bolder;
+   }
+  
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    .full-container {
+      display: block;
+      width:100%;
+      margin:0 auto;
+      position: relative;
+      top:120px;
+      
+    }
+    .search-box{
+        width:80%;
+        margin: 0 auto;
+    }
+    .middle-part
+    {
+        width:80%;
+        margin: 0 auto;
+        margin-top:20px;
+        background-color: #fff;
+    }
+    .hot-deals
+    {
+        width:80%;
+        margin: 0 auto;
+        margin-top:20px;
+        height: auto;
+        background-color: #fff;
+    }
+    .search-results{
+        display: block;
+    }
+    .search-item
+    {
+        margin-top:30px;
+    }
+    .navbar
+    {
+        margin-top:-20px;
+    }
+    .car-info
+    {
+        display: block;
+    }
+    .car-info
+    {
+        width:auto;
+        margin:0 auto;
+    }
+    .images-and-fautures
+    {
+        display: block;
+    }
+   .just
+   {
+       margin-top:40px;
+   }
+   .car-info{
+    display: block;
+    margin: 0 auto;
+    width:auto;
+    height:auto;
+    position:absolute;
+   right:10%;
+    overflow: hidden;
+
+  }
+  .images-and-fautures
+  {
+      display: block;
+  }
+
+#us
+  {
+      position: absolute;
+      top:20%;
+      
+      margin-left: 20px;
+      margin-top:-20px;
+     
+  }
+  #we
+  {
+    position: absolute;
+    top:16%;
+    margin-left: 20px;
+      margin-top:30px;
+  }
+  .feautures-info
+  {
+      display: block;
+      margin-top:30px;
+      
+  }
+  .feature-div
+  {
+      margin-top:10px;
+  }
+  #pricey
+   {
+       color:red;
+       font-size:1rem;
+       font-weight: bolder;
+   }
+  
+  }

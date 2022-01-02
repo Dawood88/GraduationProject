@@ -1,0 +1,151 @@
+.full-container {
+    position: relative;
+    top: 120px;
+    margin: 0 auto;
+    width: fit-content;
+    display: block;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.dates-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container {
+    background-color: #fff;
+    position: relative;
+    display: grid;
+    height: 400px;
+    width:fit-content;
+    grid-template-columns: 300px 600px;
+    border-radius: 5px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.356);
+}
+
+.container img {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 5px 0 0 5px;
+}
+
+.container .btn {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    background-color: #fc9400;
+    color: #fff;
+    padding: 22px 45px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.294);
+}
+
+.container .btn i {
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+
+.container__text {
+    padding: 40px 40px 0;
+}
+
+.container__text h1 {
+    color: #351897;
+    font-weight: 400;
+}
+
+.container__text p {
+    font-size: 20px;
+}
+
+.container__text .container__text__timing {
+    display: flex;
+    margin: 30px 20px;
+}
+
+.container__text .container__text__timing .container__text__timing_time {
+    margin-right: 90px;
+}
+
+.container__text .container__text__timing h2 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #818189;
+}
+
+.container__text .container__text__timing p {
+    color: #351897;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#office_img {
+    margin-top: -20px;
+    width: 100px;
+    height: 50px;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: #00A0C6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.office_name {
+    width: max-content;
+    color: rebeccapurple;
+    margin-top: -10px;
+    font-weight: bolder;
+}
+
+#price {
+    width: 250px;
+}
+
+li a {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1360px) {
+    
+    .full-container {
+        font-size:1vw;
+        width:90%;
+        display: block;
+    }
+    .container{display: block;width: auto; height: auto;}
+    .container img {
+        width: 80%;
+        height: 300px;
+        margin-top: 20px;
+        border-radius: 5px 0 0 5px;
+    }
+    .container .btn {
+        position: absolute;
+        bottom: -60px;
+        right: -20px;
+    }
+    .office_name
+    {
+        width: fit-content;
+    }
+
+}

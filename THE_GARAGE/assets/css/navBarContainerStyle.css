@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Staatliches&display=swap');
+body {
+    background: #e6e6ff;
+    font-family: 'Encode Sans', sans-serif;
+}
+
+:root {
+    --modal-duration: 1s;
+    --primary-color: #30336b;
+    --secondary-color: #be2edd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    background: #fff;
+    padding: 2px;
+    z-index: 1;
+    margin-top: -20px;
+    font-size: 17px;
+    height: 120px;
+    width: 100%;
+}
+
+.navbar a {
+    color: inherit;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: flex-center;
+    list-style: none;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.navbar li {
+    padding: 20px;
+    margin: 7px;
+    font-size: 16px;
+}
+
+.navbar .hover:hover {
+    transform: scale(1.20);
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.navbar .loginnavbutton {
+    background-color: #0275d8;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.navbar .registernavbutton {
+    background-color: #0275d8;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.navbar .loginnavbutton:hover,
+.navbar .registernavbutton:hover {
+    cursor: pointer;
+}
+
+.navbar h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 1.2rem;
+    margin-top: 38px;
+}
+
+.navImg {
+    width: 200px;
+    height: 160px;
+}
+
+.navbar-logo {
+    display: flex;
+}
+
+.navlogo {
+    background-color: #fff;
+    border-right: 2px solid red;
+    color: white;
+    /*so it will keep in place when you move down*/
+    position: fixed;
+    /*no margins from left and top*/
+    top: 0;
+    left: 0;
+    /*the dimensions*/
+    width: 200px;
+    height: 100%;
+    /*a 3D-effect  that will hide it at first */
+    transform: translateX(-100%);
+    z-index: 100;
+}
+
+.navlogo .logo {
+    /*30px top and bottom 0 left and right*/
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+/*tag name without a . 
+   class name must a .*/
+
+.navlogo .logo img {
+    height: 100px;
+    width: 100px;
+    border-radius: 40%;
+}
+
+
+/*hide the dots*/
+
+.navlogo ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navlogo ul li {
+    border-bottom: 3px solid lightgrey;
+    padding: 20px;
+}
+
+.navlogo ul li a {
+    color: black;
+    font-size: 20px;
+    /*remove the underline*/
+    text-decoration: none;
+}
+
+
+/*when hovered return the underline*/
+
+.navlogo ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/*abobe the first element give a line seperating the image from the ul*/
+
+
+/*first-of-type : return the firts li */
+
+.navlogo ul li:first-of-type {
+    border-top: 2px solid rgba(200, 200, 200, 0.1);
+}
+
+
+/*if we want toggle button inside this element to be absolute so the container must be relative*/
+
+
+/*the parent : relative --> the child:absolute*/
+
+.toggle {
+    /* background-color: transparent; */
+    border: 0;
+    outline: 0;
+    height: 120px;
+    display: block;
+    color: orangered;
+    background-image: url('../images/projectImages/menuLogo.png');
+}
+
+.navbar-logo {
+    position: absolute;
+    left: 50px;
+    top: -10px;
+}
+
+body.show-nav {
+    /*rotate 3d on x-axis  + this is the width of nav */
+    transform: translateX(200px)
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        background-color: lightgrey;
+        height: 100vh;
+    }
+    .toggle {
+        display: block;
+    }
+    .navbar {
+        position: relative;
+        z-index: 1;
+    }
+    .navbar-logo {
+        position: absolute;
+        left: 50px;
+        top: -10px;
+    }
+    .navbar-logo h1 {
+        margin-top: 50px;
+    }
+    #navlist {
+        display: none;
+    }
+    .navlogo {
+        height: 100vh;
+    }
+}
+
+.signedin {
+    margin-top: 10px;
+    padding: 10px;
+    color: #0275d8;
+    font-size: 1.2rem;
+}
+
+.signedin a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

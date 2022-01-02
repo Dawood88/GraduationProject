@@ -1,0 +1,92 @@
+.serach-container {
+    position: fixed;
+    top: 120px;
+}
+
+.search-box {
+    width: 40%;
+    height: auto;
+    background-color: #fff;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
+    position: relative;
+    top: 150px;
+    left: 80px;
+    padding: 40px;
+}
+
+label {
+    font-size: 1.2rem;
+    color: darkblue;
+    font-weight: bolder;
+}
+
+input {
+    width: 100%;
+}
+
+input,
+label {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: block;
+}
+
+select {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+[type="date"] {
+    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 100% 50% no-repeat;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.search {
+    background-color: #1c1cf0;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: 0;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 40px;
+    height: 50px;
+}
+
+.search:hover {
+    background-color: orangred;
+}
+
+.signout {
+    position: absolute;
+    right: 37px;
+    top: 86px;
+    text-align: left;
+    border-radius: 2px;
+    padding: 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 15%;
+    color: red;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    background-color: #fff;
+    z-index: 2;
+    display: none;
+    cursor: pointer;
+}
